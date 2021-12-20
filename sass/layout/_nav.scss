@@ -2,8 +2,22 @@
   display: flex;
 }
 
-.nav__list--ind {
-  margin-left: 93px;
+.nav__list {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-left: 88px;
+
+  @include mq(mobile-only) {
+    display: none;
+  }
+
+  @include mq(desktop) {
+    margin-left: 93px;
+  }
 }
 
 .nav__item:not(:last-child) {
