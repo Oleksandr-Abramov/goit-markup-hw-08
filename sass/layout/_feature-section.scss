@@ -1,0 +1,32 @@
+.feature-list {
+  display: flex;
+}
+
+.pre-title--feature {
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+}
+
+.feature-list__item {
+  display: block;
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.feature-list__text {
+  letter-spacing: 0.03em;
+}
+
+.feature-list__wrap {
+  padding: 25px 100px;
+  border-radius: 4px;
+  background-color: var(--background-body-color);
+  margin-bottom: 30px;
+}
+
+.feature-list__icon {
+  display: block;
+}
