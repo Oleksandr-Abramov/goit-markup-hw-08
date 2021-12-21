@@ -71,7 +71,7 @@
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
+  color: var(--primari-text-color);
 }
 
 .mob-menu-bottom__mail {
@@ -84,6 +84,7 @@
 
 .mob-menu-bottom__list-social {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
 }
 
