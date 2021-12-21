@@ -2,10 +2,18 @@
   background-color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @include mq(not-desktop) {
+    text-align: center;
+  }
 }
 
 .bloks {
-  display: flex;
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .address-list {
   display: block;
@@ -31,7 +39,14 @@
 }
 
 .address-list__item {
-  margin-top: 9px;
+  display: block;
+  width: 231px;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(desktop) {
+    margin-top: 9px;
+  }
 }
 
 .logo--light {
@@ -39,11 +54,20 @@
 }
 
 .join {
-  margin-left: 70px;
-  margin-top: 12px;
+  @include mq(tablet-only) {
+    margin-bottom: 118px;
+    margin-left: 165px;
+  }
+  @include mq(desktop) {
+    margin-left: 70px;
+    margin-top: 12px;
+  }
 }
 
 .pre-title--footer {
+  @include mq(mobile-only) {
+    margin-top: 60px;
+  }
   color: var(--primary-white-color);
 }
 
