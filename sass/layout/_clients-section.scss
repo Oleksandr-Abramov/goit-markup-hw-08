@@ -10,7 +10,7 @@
 }
 .clients-list__item {
   @include mq(mobile-only) {
-    flex-basis: calc(100% / 2 - 30px);
+    flex: calc(100% / 2 - 30px);
     margin: 15px;
   }
 }

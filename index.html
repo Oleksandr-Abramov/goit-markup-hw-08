@@ -47,12 +47,53 @@
             >
           </li>
         </ul>
-        <button class="mobile-menu__btn" type="button">
-          <svg class="mobile-menu__icons" width="40px" height="40px">
-            <use class="mobile-menu__icon-open" href="./images/svg/symbol-defs.svg#icon-menu_40px"></use>
-            <use class="mobile-menu__icon-close" href="./images/svg/symbol-defs.svg#icon-close_40px"></use>
+        <button data-menu-open class="mob-menu__btn mob-menu__btn--open" type="button">
+          <svg class="mob-menu__icons" width="40px" height="40px">
+            <use class="mob-menu__icon-open" href="./images/svg/symbol-defs.svg#icon-menu_40px"></use>
           </svg>
         </button>
+      </div>
+      <div data-menu class="mob-menu is-hidden">
+        <button data-menu-close class="mob-menu__btn mob-menu__btn--close" type="button">
+          <svg class="mob-menu__icons" width="40px" height="40px">
+            <use class="mob-menu__icon-close" href="./images/svg/symbol-defs.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <div class="mob-menu__container">
+          <div class="mob-menu__top">
+            <ul class="mob-men-topu__list list">
+              <li class="mob-menu-top__item"><a href="./index.html" class="mob-menu-top__link current">Студия</a></li>
+              <li class="mob-menu-top__item">
+                <a href="./portfolio.html" class="mob-menu-top__link util-accent">Портфолио</a>
+              </li>
+              <li class="mob-menu-top__item"><a href="" class="mob-menu-top__link util-accent">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="mob-menu__bottom">
+            <ul class="mob-menu-bottom__list list">
+              <li class="mob-menu-bottom__item">
+                <a href="tel:+380961111111" class="mob-menu-bottom__phone util-accent"> +38 096 111 11 11</a>
+              </li>
+              <li class="mob-menu-bottom__item">
+                <a href="mailto:info@devstudio.com" class="mob-menu-bottom__mail util-accent"> info@devstudio.com </a>
+              </li>
+            </ul>
+            <ul class="mob-menu-bottom__list-social list">
+              <li class="mob-menu-bottom__item-social">
+                <a class="mob-menu-bottom__link-social" href="https://www.instagram.com">Instagram</a>
+              </li>
+              <li class="mob-menu-bottom__item-social">
+                <a class="mob-menu-bottom__link-social" href="https://twitter.com">Twitter</a>
+              </li>
+              <li class="mob-menu-bottom__item-social">
+                <a class="mob-menu-bottom__link-social" href="https://www.facebook.com">Facebook</a>
+              </li>
+              <li class="mob-menu-bottom__item-social">
+                <a class="mob-menu-bottom__link-social" href="https://linkedin.com">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -423,7 +464,7 @@
       </div>
     </footer>
     <!-- Modal -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="modal__button" type="button">
           <svg class="modal__icon" width="30px" height="30px">
@@ -482,7 +523,8 @@
           <button type="submit" class="button button--form">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobileMenu.js"></script>
   </body>
 </html>
