@@ -1,6 +1,6 @@
 .util-accent:hover,
 .util-accent:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+  color: $accent-color;
+  fill: $accent-color;
   outline: none;
 }

@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--background-color);
+  background-color: $background-color;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -30,7 +30,7 @@
 }
 
 .address-list__text {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -50,7 +50,7 @@
 }
 
 .logo--light {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }
 
 .join {
@@ -68,7 +68,7 @@
   @include mq(mobile-only) {
     margin-top: 60px;
   }
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }
 
 .socials-list--footer {
@@ -76,6 +76,6 @@
 }
 
 .socials-list__link--dark {
-  color: var(--icon-white-color);
+  color: $icon-white-color;
   background-color: rgba(255, 255, 255, 0.1);
 }

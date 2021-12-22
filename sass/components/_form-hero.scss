@@ -5,7 +5,7 @@
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: $title-text-color;
 
   @include mq(desktop) {
     line-height: 1.15;
@@ -18,10 +18,10 @@
   margin-bottom: 28px;
 
   &:focus-within > .form-field__icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
   &:focus-within > .form-field__input {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
     outline: none;
   }
 
@@ -29,7 +29,7 @@
     flex-direction: column;
     align-self: stretch;
     &:focus-within > .form-field__label {
-      color: var(--accent-color);
+      color: $accent-color;
     }
   }
 }
@@ -95,7 +95,7 @@
 .form-checkbox__link {
   display: inline;
   text-decoration-line: underline;
-  color: var(--accent-color);
+  color: $accent-color;
   margin: 0;
   padding: 0;
 }
