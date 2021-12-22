@@ -43,8 +43,16 @@
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 40px;
   gap: 30px 30px;
+
+  @include mq(tablet-only) {
+    margin-top: 30px;
+  }
+
+  @include mq(desktop) {
+    margin-top: 50px;
+  }
 
   .item {
     @include mq(tablet-only) {
